@@ -1,0 +1,42 @@
+let gameData = {
+	"Counting": [
+		{"values":{"english": "One", "korean": "Hah Nah"}},
+		{"values":{"english": "Two", "korean": "Dul"}},
+		{"values":{"english": "Three", "korean": "Set"}},
+		{"values":{"english": "Four", "korean": "Net"}},
+		{"values":{"english": "Five", "korean": "Dah Suht"}},
+		{"values":{"english": "Six", "korean": "Yuh Suht"}},
+		{"values":{"english": "Seven", "korean": "Il Gohp"}},
+		{"values":{"english": "Eight", "korean": "Yuh Duhl"}},
+		{"values":{"english": "Nine", "korean": "Ah Hohp"}},
+		{"values":{"english": "Ten", "korean": "Yuhl"}}
+	],
+	"Hand Techniques / Soo Ki": [
+		{"values":{"english": "Straight Punch", "korean": "Juhng Gwuhn"}},
+		{"values":{"english": "Palm", "korean": "Pyuhng Soo"}},
+		{"values":{"english": "Spear-hand", "korean": "Gwahn Soo"}},
+		{"values":{"english": "Straight Spear-hand", "korean": "Jihk Gwahn Soo"}},
+		{"values":{"english": "Reverse Knife-hand", "korean": "Yuhk Soo Doh"}},
+		{"values":{"english": "Circle Knife-hand", "korean": "Hweh Juhn Soo Doh"}},
+		{"values":{"english": "Back-fist", "korean": "Gahk Gwuhn"}},
+		{"values":{"english": "Elbow", "korean": "Pahl Kum Chi"}},
+		{"values":{"english": "Praying Mantis Fist", "korean": "Sah Mah Gwi Gwuhn"}},
+		{"values":{"english": "Back-hand", "korean": "Sohn Deung Pyuhng Soo"}},
+		{"values":{"english": "Reverse Palm", "korean": "Yuhm Pyuhng Soo"}},
+		{"values":{"english": "Double Palm", "korean": "Ssang Pyuhng Soo"}},
+		{"values":{"english": "Double Knife-hand", "korean": "Ssang Soo Doh"}},
+		{"values":{"english": "Tiger's mouth fist", "korean": "Hoh Goo Gwuhn"}},
+		{"values":{"english": "Tiger claw", "korean": "Hoh Gwuhn"}},
+		{"values":{"english": "Little finger Hammer fist", "korean": "Baek Pahl Ki Gwuhn"}},
+		{"values":{"english": "One-finger fist", "korean": "Il Ji Gwuhn"}},
+		{"values":{"english": "Middle-knuckle fist", "korean": "Joong Chi Gwuhn"}},
+		{"values":{"english": "Thumb", "korean": "Uhm Ji"}},
+		{"values":{"english": "Four-finger Knuckle fist", "korean": "Sah Ji Gwuhn"}},
+		{"values":{"english": "One finger", "korean": "Il Ji"}},
+		{"values":{"english": "Two fingers", "korean": "Ee Ji"}},
+		{"values":{"english": "Five fingers", "korean": "Oh Ji"}},
+		{"values":{"english": "Praying Mantis block", "korean": "Sah Mah Gwi Mahk Ki"}},
+		{"values":{"english": "Cross block", "korean": "X Mahk Ki"}},
+		{"values":{"english": "Four Directional Blocking", "korean": "Ship Ja Mahk Ki"}}
+	]
+};
