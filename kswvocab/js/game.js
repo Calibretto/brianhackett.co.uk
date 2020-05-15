@@ -3,6 +3,7 @@ var selectedCategories = [];
 var numberOfQuestions = 10;
 var numberOfAnswers = 2;
 var questions = [];
+var correctAnswers = 0;
 
 window.onload = function() {
 	categoriesDiv = document.getElementById("categories");
@@ -27,6 +28,11 @@ function startGame() {
 	var gameDiv = document.getElementById("game-wrapper");
 	gameDiv.innerHTML = "";
 	
+	var progressDiv = document.getElementById("progress-wrapper");
+	progressDiv.innerHTML = "";
+	
+	correctAnswers = 0;
+	
 	var selectedCheckboxes = categoriesDiv.querySelectorAll("input[type='checkbox']:checked");
 	
 	selectedCategories = {};
@@ -48,10 +54,16 @@ function startGame() {
 	for (var i=0; i < questions.length; i++) {
 		let question = questions[i];
 		gameDiv.appendChild(question.buildHTML(i + 1));
+		
+		let progressSection = createDiv("progress-question-" + (i + 1));
+		progressDiv.appendChild(progressSection);
 	}
 	
 	var gameSetupWrapper = document.getElementById("game-setup-wrapper");
 	gameSetupWrapper.style.display = "none";
+	
+	var scoreWrapper = document.getElementById("score-wrapper");
+	scoreWrapper.style.display = "none";
 	
 	var firstQuestion = document.getElementById("question-1");
 	firstQuestion.style.display = "block";
@@ -59,13 +71,20 @@ function startGame() {
 
 function quitGame() {
 	if (window.confirm("Are you sure you want to quit?")) {
-		// ToDo: Just remove all divs
-		var question = null;
-		for (var q=1; question = document.getElementById("question-" + q); q++) {
-			question.style.display = "none";
-		}
-	
-		var gameSetupWrapper = document.getElementById("game-setup-wrapper");
-		gameSetupWrapper.style.display = "block";
+		restartGame();
 	}
+}
+
+function restartGame() {
+	var gameDiv = document.getElementById("game-wrapper");
+	gameDiv.innerHTML = "";
+	
+	var progressDiv = document.getElementById("progress-wrapper");
+	progressDiv.innerHTML = "";
+		
+	var scoreWrapper = document.getElementById("score-wrapper");
+	scoreWrapper.style.display = "none";
+	
+	var gameSetupWrapper = document.getElementById("game-setup-wrapper");
+	gameSetupWrapper.style.display = "block";
 }

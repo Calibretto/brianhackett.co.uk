@@ -58,6 +58,11 @@ class Question {
 		
 		this.submitButton().style.display = "none";
 		this.nextButton().style.display = "block";
+		
+		let radioButtons = this.questionDiv().querySelectorAll("input[type='radio']");
+		for (var i=0; i < radioButtons.length; i++) {
+			radioButtons[i].disabled = true;
+		}
 	}
 	
 	resetClasses() {
@@ -143,7 +148,12 @@ function nextQuestion(question) {
 	if (nextQuestionDiv != null) {
 		nextQuestionDiv.style.display = "block";
 	} else {
-		quitGame();
+		let scoreLabel = document.getElementById("score-label");
+		scoreLabel.innerHTML = "";
+		scoreLabel.appendChild(document.createTextNode(correctAnswers + " / " + numberOfQuestions));
+	
+		let scoreDiv = document.getElementById("score-wrapper");
+		scoreDiv.style.display = "block";
 	}
 }
 
@@ -155,13 +165,17 @@ function submitQuestion(question) {
 	
 	let correctAnswerListItem = question.correctAnswerListItem();
 	let selectedAnswerListItem = question.selectedAnswerListItem();
+	let progressDiv = document.getElementById("progress-question-" + question.questionNumber);
 	
 	question.resetClasses();
 	if (selectedAnswerIndex == question.correctAnswerIndex) {
 		selectedAnswerListItem.className = "right";
+		progressDiv.className = "progressRight";
+		correctAnswers++;
 	} else {
 		selectedAnswerListItem.className = "wrong";
 		correctAnswerListItem.className = "correct";
+		progressDiv.className = "progressWrong";
 	}
 	
 	question.next();
