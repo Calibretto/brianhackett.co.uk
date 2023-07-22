@@ -129,7 +129,7 @@ let gameData = {
 	"Nak Bup / Falling Principles": [
 		{"values":{"english": "Font Fall", "korean": "Ahp Nak Bup"}},
 		{"values":{"english": "Back Fall", "korean": "Dee Nak Bup"}},
-		{"values":{"english": "Yuhp Nak Bup", "korean": "Side Fall"}},
+		{"values":{"english": "Side Fall", "korean": "Yuhp Nak Bup"}},
 		{"values":{"english": "Front-side Fall", "korean": "Ahp Yuhp Nak Bup"}},
 		{"values":{"english": "Rolling Fall", "korean": "Hweh Juhn Nak Bup"}},
 		{"values":{"english": "Two Hand Cart-wheel", "korean": "Doo Sohn Poong Cha"}},
